@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web3 NFT Marketplace</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/@walletconnect/web3-provider@1.7.8/dist/umd/index.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/web3modal@1.9.8/dist/index.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ethers/5.7.2/ethers.umd.min.js"></script>
+</head>
+<body>
+
+    <!-- Виджет Web3 -->
+    <div id="sidebar" class="collapsed" onclick="toggleSidebar(event)">
+        <div class="widget-content">
+            <h3>Web3 Подключение</h3>
+            <button id="web3-connect" onclick="connectWallet()">Подключить кошелек</button>
+            <p id="wallet-info">Кошелек: не подключен</p>
+        </div>
+    </div>
+
+    <main>
+        <h1>Коллекция NFT</h1>
+        <div id="nft-container" class="nft-grid"></div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
